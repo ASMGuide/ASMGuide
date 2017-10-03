@@ -1,0 +1,766 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.6.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  
+<!-- Mirrored from ASM.guide/troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2017 11:36:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Troubleshooting - ASM Guide</title>
+
+
+
+
+<meta name="description" content="Full sighax CFW Guide">
+
+
+
+
+<meta name="author" content="Plailect">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ASM Guide">
+<meta property="og:title" content="Troubleshooting">
+
+
+  <link rel="canonical" href="troubleshooting-2.html">
+  <meta property="og:url" content="troubleshooting-2.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Plailect",
+      "url" : "https://ASM.guide",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="IzU3K8_0o_n4KY_o0Azr6DK7M4aRlZMzrWKr4iyXyrs" />
+
+
+  <meta name="msvalidate.01" content="F3532011519E308583A0A2CAF2DD69E8">
+
+
+
+<!-- end SEO -->
+
+
+<link href="feed.xml" type="application/atom+xml" rel="alternate" title="ASM Guide Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<script type="text/javascript">
+    var host = "ASM.guide";
+    if ((host == window.location.host) && (window.location.protocol != "troubleshooting.html"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icone364.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="images/favicon-32x32e364.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-194x194e364.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="images/android-chrome-192x192e364.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon-16x16e364.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="manifest" href="images/manifeste364.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="images/safari-pinned-tabe364.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="images/favicone364.ico?v=PYEmwKvQAx">
+<meta name="apple-mobile-web-app-title" content="Guide">
+<meta name="application-name" content="Guide">
+<meta name="msapplication-TileColor" content="#2E3440">
+<meta name="msapplication-TileImage" content="https://ASM.guide/images/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="https://ASM.guide/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="theme-color" content="#2E3440">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <ul class="visible-links">
+          
+          
+          
+          
+          
+            
+              <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">ASM Guide</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="faq.html">FAQ</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="donations.html">Donations</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="credits.html">Credits</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="updating-b9s.html">Updating B9S</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="a9lh-to-b9s.html">A9LH to B9S</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="troubleshooting.html">Troubleshooting</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="region-changing.html">Region Changing</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="godmode9-usage.html">GodMode9 Usage</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="site-navigation.html">Site Navigation</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="uninstall-cfw.html">Uninstall CFW</a></li>
+            
+          
+        </ul>
+        <ul class="hidden-links links-menu hidden"></ul>
+        <ul class="hidden-links lang-menu hidden">
+          
+          
+          
+          <li class="masthead__menu-item"><a href="troubleshooting-2.html">English</a></li>
+          <li class="masthead__menu-item"><a href="es_ES/troubleshooting.html">Español</a></li>
+          <li class="masthead__menu-item"><a href="de_DE/troubleshooting.html">Deutsch</a></li>
+          <li class="masthead__menu-item"><a href="fr_FR/troubleshooting.html">Français</a></li>
+          <li class="masthead__menu-item"><a href="it_IT/troubleshooting.html">Italiano</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/nl_NL/troubleshooting.html">Nederlands</a></li> -->
+          <li class="masthead__menu-item"><a href="pt_BR/troubleshooting.html">Português do Brasil</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/pt_PT/troubleshooting.html">Português (Portugal)</a></li> -->
+          <li class="masthead__menu-item"><a href="ru_RU/troubleshooting.html">Русский</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/zh_CN/troubleshooting.html">简体中文</a></li> -->
+          <li class="masthead__menu-item"><a href="zh_TW/troubleshooting.html">繁體中文</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/pl_PL/troubleshooting.html">Polski</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/tr_TR/troubleshooting.html">Türkçe</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/vi_VN/troubleshooting.html">Tiếng Việt</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/ca_ES/troubleshooting.html">Català</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/el_GR/troubleshooting.html">Ελληνικά</a></li> -->
+          <li class="masthead__menu-item"><a href="he_IL/troubleshooting.html">עברית‎</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/sv_SE/troubleshooting.html">Svenska</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/ko_KR/troubleshooting.html">한국어</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/no_NO/troubleshooting.html">Norsk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/ja_JP/troubleshooting.html">日本語</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/ar_SA/troubleshooting.html">اللغة العربية</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/hu_HU/troubleshooting.html">Magyar</a></li> -->
+          <li class="masthead__menu-item"><a href="ro_RO/troubleshooting.html">Română</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/sr_SP/troubleshooting.html">Српски</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/af_ZA/troubleshooting.html">Afrikaans</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/ms_MY/troubleshooting.html">Bahasa Melayu</a></li> -->
+          <li class="masthead__menu-item"><a href="fi_FI/troubleshooting.html">Suomi</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/da_DK/troubleshooting.html">Dansk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/uk_UA/troubleshooting.html">Українська</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/cs_CZ/troubleshooting.html">Čeština</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://ASM.guide/en_PT/troubleshooting.html">Pirate English</a></li> -->
+        </ul>
+        <button class="navsel"><div class="navicon"></div></button>
+        <button class="langsel"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6670011780914577",
+    enable_page_level_ads: true
+  });
+</script>
+
+<div id="main" role="main">
+  
+
+<div class="sidebar sticky" style="display: none;">
+  
+
+
+
+
+
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    <li>
+      <span class="nav__sub-title">Overall Progress</span>
+      <ol>
+        
+          
+            <li style="display: none;" data-name="home"><a href='index.html'>Home</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="get-started"><a href='get-started.html'>Get Started</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="get-started-(new-ASM)"><a href='get-started-(new-ASM).html'>Get Started (New ASM)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="get-started-(old-ASM)"><a href='get-started-(old-ASM).html'>Get Started (Old ASM)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="cart-update"><a href='cart-update.html'>Cart Update</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="ntrboot"><a href='ntrboot.html'>ntrboot</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(dsiware)"><a href='installing-boot9strap-(dsiware).html'>Installing boot9strap (DSiWare)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="multiple-options"><i>(Multiple Options)</i></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(ASM-single-system)"><a href='flashing-ntrboot-(ASM-single-system).html'>Flashing ntrboot (ASM Single System)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(ASM-multi-system)"><a href='flashing-ntrboot-(ASM-multi-system).html'>Flashing ntrboot (ASM Multi System)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='flashing-ntrboot-(dsi).html'>Flashing ntrboot (DSi)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='flashing-ntrboot-(nds).html'>Flashing ntrboot (NDS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(powersaves)"><a href='flashing-ntrboot-(powersaves).html'>Flashing ntrboot (Powersaves)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(soundhax)"><a href='homebrew-launcher-(soundhax).html'>Homebrew Launcher (Soundhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(alternatives)"><a href='homebrew-launcher-(alternatives).html'>Homebrew Launcher (Alternatives)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="ntr-and-cubic-ninja"><a href='ntr-and-cubic-ninja.html'>NTR and Cubic Ninja</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(2xrsa)"><a href='installing-boot9strap-(2xrsa).html'>Installing boot9strap (2xrsa)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(browser)"><a href='installing-boot9strap-(browser).html'>Installing boot9strap (Browser)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(dsiware-game-injection)"><a href='installing-boot9strap-(dsiware-game-injection).html'>Installing boot9strap (DSiWare Game Injection)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(dsiware-save-injection)"><a href='installing-boot9strap-(dsiware-save-injection).html'>Installing boot9strap (DSiWare Save Injection)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='installing-boot9strap-(hardmod).html'>Installing boot9strap (Hardmod)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(homebrew-launcher)"><a href='installing-boot9strap-(homebrew-launcher).html'>Installing boot9strap (Homebrew Launcher)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(mset)"><a href='installing-boot9strap-(mset).html'>Installing boot9strap (MSET)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='installing-boot9strap-(ntrboot).html'>Installing boot9strap (ntrboot)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="godmode9-usage#restoring-a-nand-backup"><a href='godmode9-usage.html#restoring-a-nand-backup'>NAND Restore</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="finalizing-setup"><a href='finalizing-setup.html'>Finalizing Setup</a></li>
+          
+        
+      </ol>
+    </li>
+  </ul>
+</nav>
+
+</div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Troubleshooting">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Troubleshooting
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+
+        <hr>
+        
+        
+        
+
+        
+          
+          <div class ="notice"><b>For support in English, ask for help at <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a>.</b></div>
+        
+          
+          <div class ="notice"><b>If you appreciate this guide, I accept <a href="donations.html">Donations</a> through <a href="https://www.paypal.me/plailectguides/15">PayPal</a> or <a href="bitcoin:1Ad3PnU6TmJxvJ62LobgMw5uT8hR1LQety">Bitcoin</a>.</b></div>
+        
+
+        <hr>
+
+        <center>
+        <script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6670011780914577"
+          data-ad-slot="2889110246"
+          data-ad-format="auto">
+        </ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6670011780914577"
+          data-ad-slot="8734909100"
+          data-ad-format="auto">
+        </ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </center>
+
+        <hr>
+
+        <aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Table of Contents</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#dsi--ds-functionality-is-broken-after-completing-the-guide" id="markdown-toc-dsi--ds-functionality-is-broken-after-completing-the-guide">DSi / DS functionality is broken after completing the guide</a>    <ul>
+      <li><a href="#what-you-need" id="markdown-toc-what-you-need">What you need</a></li>
+      <li><a href="#instructions" id="markdown-toc-instructions">Instructions</a>        <ul>
+          <li><a href="#section-i---prep-work" id="markdown-toc-section-i---prep-work">Section I - Prep Work</a></li>
+          <li><a href="#section-ii---installing-titles" id="markdown-toc-section-ii---installing-titles">Section II - Installing titles</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#removing-an-nnid-without-formatting-your-device" id="markdown-toc-removing-an-nnid-without-formatting-your-device">Removing an NNID without formatting your device</a></li>
+  <li><a href="#cannot-inject-hs-on-gateway-downgraded-device" id="markdown-toc-cannot-inject-hs-on-gateway-downgraded-device">Cannot inject H&amp;S on Gateway downgraded device</a></li>
+  <li><a href="#a-browser-based-exploit-is-not-working" id="markdown-toc-a-browser-based-exploit-is-not-working">A browser based exploit is not working</a></li>
+  <li><a href="#black-screen-on-sysnand-boot" id="markdown-toc-black-screen-on-sysnand-boot">Black screen on SysNAND boot</a></li>
+  <li><a href="#black-screen-on-sysnand-boot-after-installing-boot9strap" id="markdown-toc-black-screen-on-sysnand-boot-after-installing-boot9strap">Black screen on SysNAND boot after Installing boot9strap</a></li>
+  <li><a href="#blue-screen-on-boot-bootrom-error" id="markdown-toc-blue-screen-on-boot-bootrom-error">Blue screen on boot (bootrom error)</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>If you are unable to boot your device, please look for the section relevant to you and follow the instructions.</p>
+
+<p>If you still cannot solve your issue and need to reach out for help, please paste the contents of all relevant .log files from the root of your SD card into a <a href="https://gist.github.com/">Gist</a>, then come for help prepared with a detailed description of your problem and what you’ve tried.</p>
+
+<p>To use the <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme">magnet</a> links on this page, you will need a torrent client like <a href="http://dev.deluge-torrent.org/wiki/Download">Deluge</a>.</p>
+
+<h2 id="dsi--ds-functionality-is-broken-after-completing-the-guide">DSi / DS functionality is broken after completing the guide</h2>
+
+<h3 id="what-you-need">What you need</h3>
+
+<ul>
+  <li>The TWL_FIRM <code class="highlighter-rouge">.cia</code> for your device
+    <ul>
+      <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:eab8558c97b18b1f329a2bfcc3c899b84c082a27&amp;dn=New%5FASM%20TWL%5FFIRM%20-%20v9936.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">New_ASM TWL_FIRM - v9936.cia</code></a></li>
+      <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:17511eadb6e6f3ff22d04f90644e37bd2d96ca43&amp;dn=Old%5FASM%20TWL%5FFIRM%20-%20v8817.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">Old_ASM TWL_FIRM - v8817.cia</code></a></li>
+    </ul>
+  </li>
+  <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:4a106681407fede5de95cc8bda635432481f6b5d&amp;dn=TWL%20Version%20Data%20-%20v0.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">TWL Version Data - v0.cia</code></a></li>
+  <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:2b9df8496922f2546dfb0b01220068ce53c19d3d&amp;dn=DS%20Internet%20-%20v2048.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">DS Internet - v2048.cia</code></a></li>
+  <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:b581d3c5d98f5e621fddfc1ce5704bb45bf05a8c&amp;dn=DS%20Download%20Play%20-%20v1024.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">DS Download Play - v1024.cia</code></a></li>
+  <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:7b90d506ad032a581a00035616eaa17a68c48eff&amp;dn=Nintendo%20DS%20Cart%20Whitelist%20-%20v11264.cia&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&amp;tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&amp;tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&amp;tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce"><code class="highlighter-rouge">Nintendo DS Cart Whitelist - v11264.cia</code></a></li>
+</ul>
+
+<h3 id="instructions">Instructions</h3>
+
+<h4 id="section-i---prep-work">Section I - Prep Work</h4>
+
+<ol>
+  <li>Create a folder named <code class="highlighter-rouge">cias</code> on the root of your SD card if it does not already exist</li>
+  <li>Copy <code class="highlighter-rouge">TWL Version Data - v0.cia</code> to the <code class="highlighter-rouge">/cias/</code> folder on your SD card</li>
+  <li>Copy <code class="highlighter-rouge">DS Download Play - v1024.cia</code> to the <code class="highlighter-rouge">/cias/</code> folder on your SD card</li>
+  <li>Copy <code class="highlighter-rouge">DS Internet - v2048.cia</code> to the <code class="highlighter-rouge">/cias/</code> folder on your SD card</li>
+  <li>Copy <code class="highlighter-rouge">Nintendo DS Cart Whitelist - v11264.cia</code> to the <code class="highlighter-rouge">/cias/</code> folder on your SD card</li>
+  <li>Copy either <code class="highlighter-rouge">New_ASM TWL_FIRM - v9936.cia</code>  or <code class="highlighter-rouge">Old_ASM TWL_FIRM - v8817.cia</code> to the <code class="highlighter-rouge">/cias/</code> folder on your SD card</li>
+</ol>
+
+<h4 id="section-ii---installing-titles">Section II - Installing titles</h4>
+
+<ol>
+  <li>Launch FBI</li>
+  <li>Navigate to <code class="highlighter-rouge">SD</code> -&gt; <code class="highlighter-rouge">cias</code></li>
+  <li>Select “&lt;current directory&gt;”</li>
+  <li>Select “Install and delete all CIAs”</li>
+  <li>Press (Home) to exit FBI</li>
+</ol>
+
+<h2 id="removing-an-nnid-without-formatting-your-device">Removing an NNID without formatting your device</h2>
+
+<p class="notice--info">Note that if you have any payload files other than <code class="highlighter-rouge">GodMode9.firm</code> in the <code class="highlighter-rouge">/luma/payloads/</code> folder on your SD card, holding (Start) on boot will display a “chainloader menu” where you will have to use the D-Pad and the (A) button to select “GodMode9” for these instructions.</p>
+
+<ol>
+  <li>Launch GodMode9 by holding (Start) during boot</li>
+  <li>Navigate to <code class="highlighter-rouge">[1:] SYSNAND CTRNAND</code> -&gt; <code class="highlighter-rouge">data</code> -&gt; (32 Character ID) -&gt; <code class="highlighter-rouge">sysdata</code> -&gt; <code class="highlighter-rouge">00010038</code></li>
+  <li>Hold down the (R) trigger, then press (X) on <code class="highlighter-rouge">00000000</code> to rename this file</li>
+  <li>Press (Up) once to change the name to <code class="highlighter-rouge">10000000</code></li>
+  <li>Press (A) to save changes</li>
+  <li>Press (A) to unlock SysNAND writing, then input the key combo given</li>
+  <li>Navigate back to the Main Menu</li>
+  <li>Press (Start) to reboot your device</li>
+</ol>
+
+<h2 id="cannot-inject-hs-on-gateway-downgraded-device">Cannot inject H&amp;S on Gateway downgraded device</h2>
+
+<p>This is caused by Gateway implementing a very shoddy downgrade method which leaves two versions of each app on the system. One of them is unused, but it confuses the H&amp;S inject system, causing it to inject into the wrong one.</p>
+
+<p class="notice--info">Note that if you have any payload files other than <code class="highlighter-rouge">GodMode9.firm</code> in the <code class="highlighter-rouge">/luma/payloads/</code> folder on your SD card, holding (Start) on boot will display a “chainloader menu” where you will have to use the D-Pad and the (A) button to select “GodMode9” for these instructions.</p>
+
+<ol>
+  <li>Launch GodMode9 by holding (Start) during boot</li>
+  <li>Navigate to <code class="highlighter-rouge">[1:] SYSNAND CTRNAND</code> -&gt; <code class="highlighter-rouge">title</code> -&gt; <code class="highlighter-rouge">00040010</code></li>
+  <li>Navigate to the folder for your device and region:
+    <ul>
+      <li><strong>Old ASM or Old 2DS EUR</strong>: <code class="highlighter-rouge">00022300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+      <li><strong>Old ASM or Old 2DS JPN</strong>: <code class="highlighter-rouge">00020300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+      <li><strong>Old ASM or Old 2DS USA</strong>: <code class="highlighter-rouge">00021300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+      <li><strong>New ASM or New 2DS EUR</strong>: <code class="highlighter-rouge">20022300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+      <li><strong>New ASM or New 2DS JPN</strong>: <code class="highlighter-rouge">20020300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+      <li><strong>New ASM or New 2DS USA</strong>: <code class="highlighter-rouge">20021300</code> -&gt; <code class="highlighter-rouge">content</code></li>
+    </ul>
+  </li>
+  <li>Notice that there are two sets of app and tmd files, one set with uppercase extensions (<code class="highlighter-rouge">.TMD</code> and <code class="highlighter-rouge">.APP</code>), and one set with lowercase extensions (<code class="highlighter-rouge">.tmd</code> and <code class="highlighter-rouge">.app</code>)</li>
+  <li>While holding the (R) trigger, press (Y) to create a new directory</li>
+  <li>Press (A) to confirm the name <code class="highlighter-rouge">newdir</code> (it does not matter what the folder is called)</li>
+  <li>Press (A) to unlock SysNAND (lvl1) writing, then input the key combo given</li>
+  <li>Press (B) to decline relocking write permissions if prompted</li>
+  <li>Press the (L) trigger on each of the uppercase extension files (<code class="highlighter-rouge">.TMD</code> and <code class="highlighter-rouge">.APP</code>) to mark them</li>
+  <li>Press (Y) to copy the files</li>
+  <li>Navigate to <code class="highlighter-rouge">newdir</code></li>
+  <li>Press (Y) to paste the files</li>
+  <li>Select “Move path(s)”</li>
+  <li>The uppercase extension files will have been moved to the <code class="highlighter-rouge">newdir</code> directory</li>
+  <li>Press (Start) to reboot your device</li>
+  <li>Return to <a href="finalizing-setup.html">Finalizing Setup</a> and retry the FBI injection</li>
+  <li>If this still doesn’t work, move the uppercase extension files back to the <code class="highlighter-rouge">content</code> folder, then move the lowercase extension files to the <code class="highlighter-rouge">newdir</code> folder, then return to <a href="finalizing-setup.html">Finalizing Setup</a> and retry the FBI injection</li>
+</ol>
+
+<h2 id="a-browser-based-exploit-is-not-working">A browser based exploit is not working</h2>
+
+<p>Browser based exploits (such as browserhax or 2xrsa) are often unstable and crash frequently, but they can sometimes be fixed by doing the following steps.</p>
+
+<ol>
+  <li>Launch the browser, then launch the browser settings</li>
+  <li>Scroll to the bottom and Initialize Savedata (it also may be called Clear All Save Data)</li>
+  <li>Try the exploit again</li>
+</ol>
+
+<h2 id="black-screen-on-sysnand-boot">Black screen on SysNAND boot</h2>
+
+<ol>
+  <li>Try booting with your SD card out, and then reinserting it after booting
+    <ol>
+      <li>Power off your device</li>
+      <li>Remove your SD card from your device</li>
+      <li>Power on your device</li>
+      <li>When the home menu appears, reinsert your SD card into your device</li>
+      <li>If this worked, you should clear Home Menu’s extdata by navigating to the following folder on your SD card: <code class="highlighter-rouge">/Nintendo ASM/(32 Character ID)/(32 Character ID)/extdata/00000000/</code>
+        <ul>
+          <li>EUR Region: Delete <code class="highlighter-rouge">00000098</code></li>
+          <li>JPN Region: Delete <code class="highlighter-rouge">00000082</code></li>
+          <li>USA Region: Delete <code class="highlighter-rouge">0000008f</code></li>
+          <li>CHN Region: Delete <code class="highlighter-rouge">000000A1</code></li>
+          <li>KOR Region: Delete <code class="highlighter-rouge">000000A9</code></li>
+          <li>TWN Region: Delete <code class="highlighter-rouge">000000B1</code></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Try booting without any cartridges inserted (including flashcarts)</li>
+  <li>If you have a hardmod and a NAND backup, flash the backup back to SysNAND</li>
+  <li>Try booting into recovery mode and updating your system
+    <ol>
+      <li>Power off your device</li>
+      <li>Hold (L) + (R) + (A) + (Up)</li>
+      <li>Power on your device</li>
+      <li>If you enter safe mode, update your device</li>
+    </ol>
+  </li>
+  <li>Your device may be bricked. For support, ask for help at <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a></li>
+</ol>
+
+<h2 id="black-screen-on-sysnand-boot-after-installing-boot9strap">Black screen on SysNAND boot after Installing boot9strap</h2>
+
+<ol>
+  <li>Ensure you have a working payload
+    <ol>
+      <li>Check for the existence of <code class="highlighter-rouge">boot.firm</code> in the root of your SD card.</li>
+    </ol>
+  </li>
+  <li>Try resetting Luma’s config and fix options
+    <ol>
+      <li>Delete <code class="highlighter-rouge">/luma/config.bin</code> from your SD card</li>
+      <li>Set your options when it boots</li>
+    </ol>
+  </li>
+  <li>Test booting GodMode9
+    <ol>
+      <li>On LumaASM, hold (Start) on boot</li>
+    </ol>
+  </li>
+  <li>Try deleting home menu’s extdata
+    <ol>
+      <li>Clear Home Menu’s extdata by navigating to the following folder on your SD card: <code class="highlighter-rouge">/Nintendo ASM/(32 Character ID)/(32 Character ID)/extdata/00000000/</code>
+        <ul>
+          <li>EUR Region: Delete <code class="highlighter-rouge">00000098</code></li>
+          <li>JPN Region: Delete <code class="highlighter-rouge">00000082</code></li>
+          <li>USA Region: Delete <code class="highlighter-rouge">0000008f</code></li>
+          <li>CHN Region: Delete <code class="highlighter-rouge">000000A1</code></li>
+          <li>KOR Region: Delete <code class="highlighter-rouge">000000A9</code></li>
+          <li>TWN Region: Delete <code class="highlighter-rouge">000000B1</code></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Try booting without any cartridges inserted (including flashcarts)</li>
+  <li>If you previously downgraded with Gateway, ensure that you are using the latest LumaASM version (v6.2.3 or higher)</li>
+  <li>If your NAND is of a version between 3.0.0 and 4.5.0, do the following:
+    <ul>
+      <li>Ensure that you are using the latest LumaASM version (v6.6 or higher)</li>
+      <li>Download <a href="http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056">this file</a> and rename it to <code class="highlighter-rouge">native.firm</code></li>
+      <li>Download <a href="http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk">this file</a></li>
+      <li>Copy <code class="highlighter-rouge">native.firm</code> and <code class="highlighter-rouge">cetk</code> to the <code class="highlighter-rouge">/luma/</code> folder on your SD card</li>
+      <li>If you have LumaASM version 7.1 or lower, rename <code class="highlighter-rouge">native.firm</code> to <code class="highlighter-rouge">firmware.bin</code></li>
+      <li>Delete both of these files after updating your device</li>
+    </ul>
+  </li>
+  <li>Try following <a href="ctrtransfer.html">CTRTransfer</a></li>
+  <li>Ask for help at <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a>.</li>
+</ol>
+
+<h2 id="blue-screen-on-boot-bootrom-error">Blue screen on boot (bootrom error)</h2>
+
+<ol>
+  <li>Your device is bricked</li>
+  <li>You will need to get a <a href="https://gbatemp.net/threads/414498/">hardmod</a> or repair / replace your device</li>
+</ol>
+
+        
+        
+        <hr>
+
+        <center>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6670011780914577"
+          data-ad-slot="7670623049"
+          data-ad-format="horizontal">
+        </ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6670011780914577"
+          data-ad-slot="9147356245"
+          data-ad-format="horizontal">
+        </ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </center>
+
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+  
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+
+        
+
+
+
+<div class="page__footer-copyright">&copy; 2017 Plailect - <a href="https://github.com/Plailect/Guide">Source</a> - <a href="site-navigation.html">Site Navigation</a> - <a href="why-ads.html">Why Ads?</a>
+
+      </footer>
+    </div>
+
+    
+  <script src="assets/js/main.min.js"></script>
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86465881-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+  </body>
+
+<!-- Mirrored from ASM.guide/troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2017 11:36:36 GMT -->
+</html>
