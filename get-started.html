@@ -13,15 +13,13 @@
         <ul class="visible-links">  
             <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">ASM Guide</a></li>
             <li class="masthead__menu-item"><a href="faq.html">FAQ</a></li> 
-            <li class="masthead__menu-item"><a href="credits.html">Credits</a></li>          
-			<li class="masthead__menu-item"><a href="site-navigation.html">Site navigation</a></li>          
+ 			<li class="masthead__menu-item"><a href="site-navigation.html">Site navigation</a></li>          
       </nav>
     </div>
   </div>
 </div>
-    <meta itemprop="headline" content="Get Started">
-    <div class="page__inner-wrap">
-   
+     <section class="page__content" itemprop="text">
+    <meta itemprop="headline" content="Get Started">   
 <h3 id="device-table">Instructions</h3>
 <h4 id="device-table">What you need</h4>
 	<ol>
@@ -38,16 +36,26 @@
 		<ol>
 			<li>Plug in your USB drive into your computer.
 			<li>Open Rufus and click yes on both popups.
-			<li>Under device, click on your USB drive.
+			<li>At the Rufus configuration screen choose the following settings:
+				<ol>
+					<li>Under Devices, click on your <strong> USB drive</strong>.
+					<li>Under Partition scheme, choose <strong> GPT partition scheme for UEFI </strong>.
+					<li>Set the <strong>File system</strong> and the <strong>Cluster size</strong> options to default.
+					<li>Under New volume label type in <strong>Windows 10</strong>.
+					<li>Under Format Options, click Create a bootable disk using <strong>ISO image</strong>.
+				</ol>
+				<p class="notice--info"><img src="assets/images/RufusSettings.jpg" alt=""></p>
 			<li>Click on the DVD drive icon and select the Windows 10 ISO. 
 			<li>Click the start button at the bottom. <br> Rufus is now copying Windows 10 to your USB drive. <br> It will take a few minutes, depending on your USB drive. 
 		</ol>	
 	<h4 id="device-table">Installation</h4>
 		<ol>
 			<li>Shut down your computer.
-			<li>Turn it on while pressing the esc key.
-			<li>
+			<li>Turn it on while pressing the esc key repeatedly.
+			<li>In the startup menu, click F9 (Boot device options)<br> and select your USB drive using the arrow keys.
+		</ol>
 </div>
+		<p class=notice--primary>You are done with all of the preparation steps</p>
         <hr>
       </section>
     </div>
