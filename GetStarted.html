@@ -1,62 +1,72 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<meta charset="utf-8">
-<title>Get Started</title>
-<link rel="stylesheet" href="assets/css/main.css">
-<link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
-<script src="assets/js/main.min.js"></script>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get Started</title>
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
+  <script src="assets/js/main.min.js">
+  </script>
+</head>
+<body>
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <ul class="visible-links">  
-            <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">ASM Guide</a></li>
-            <li class="masthead__menu-item"><a href="faq.html">FAQ</a></li> 
- 			<li class="masthead__menu-item"><a href="site-navigation.html">Site navigation</a></li>          
-      </nav>
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav class="greedy-nav" id="site-nav">
+            <ul class="visible-links">
+              <li class="masthead__menu-item masthead__menu-item--lg">
+                <a href="index.html">ASM Guide</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="site-navigation.html">Site navigation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-     <section class="page__content" itemprop="text">
-    <meta itemprop="headline" content="Get Started">   
-<h3 id="device-table">Get Started</h3>
-<h4 id="device-table">What you need</h4>
-	<ol>
-		<li>A USB drive   <strong>(Must be at least 4GB) <br> Everything on your USB drive will be deleted, so make a backup!</strong>
-		<li>A period when you don't need to use your computer (to install Windows)
-	</ol>	
-	<h4 id="device-table">Downloads</h4>
-		<ol>
-			<li><a href="https://goo.gl/3AkPDH" target="_blank">Windows 10</a>
-			<li><a href="https://rufus.akeo.ie/downloads/rufus-2.17.exe" target="_blank">Rufus</a> 
-		</ol>
-		
-	<h4 id="device-table">Setup</h4>
-		<ol>
-			<li>Plug in your USB drive into your computer.
-			<li>Open Rufus and click yes on both popups.
-			<li>At the Rufus configuration screen choose the following settings:
-				<ol>
-					<li>Under Devices, click on your <strong> USB drive</strong>.
-					<li>Under Partition scheme, choose <strong> GPT partition scheme for UEFI </strong>.
-					<li>Set the <strong>File system</strong> and the <strong>Cluster size</strong> options to default.
-					<li>Under New volume label type in <strong>Windows 10</strong>.
-					<li>Under Format Options, click Create a bootable disk using <strong>ISO image</strong>.
-					<li>After making sure that every option is set correctly, click <strong>Start</strong> at the bottom. 
-				</ol> 
-				<p class="notice--info"><img src="assets/images/RufusSettings.jpg" alt="">
-				<li>Rufus is now copying Windows 10 to your USB drive. <br> It will take a few minutes, depending on your USB drive.
-			</ol>	
-</div>
-		<p class=notice--primary>You are done with all of the preparation steps. <a href="Installation.html">Continue to the next step.</a></p>
-        <hr>
-      </section>
-    </div>
+    <section class="page__content" itemprop="text">
+      <meta content="Get Started" itemprop="headline">
+      <h3 id="device-table">Get Started</h3>
+      <h4 id="device-table">What you need</h4>
+      <ol>
+        <li>A USB drive <strong>(Must be at least 4GB)<br>
+        Everything on your USB drive will be deleted, so make a backup!</strong></li>
+        <li>A period when you don't need to use your computer (to install Windows)</li>
+      </ol>
+      <h4 id="device-table">Downloads</h4>
+      <ol>
+        <li>
+          <a href="https://goo.gl/3AkPDH" target="_blank">Windows 10</a>
+        </li>
+        <li>
+          <a href="https://rufus.akeo.ie/downloads/rufus-2.17.exe" target="_blank">Rufus</a>
+        </li>
+      </ol>
+      <h4 id="device-table">Setup</h4>
+      <ol>
+        <li>Plug in your USB drive into your computer.</li>
+        <li>Open Rufus and click yes on both popups.</li>
+        <li>At the Rufus configuration screen choose the following settings:
+          <ol>
+            <li>Under Devices, click on your <strong>USB drive</strong>.</li>
+            <li>Under Partition scheme, choose <strong>GPT partition scheme for UEFI</strong> .</li>
+            <li>Set the <strong>File system</strong> and the <strong>Cluster size</strong> options to default.</li>
+            <li>Under New volume label type in <strong>Windows 10</strong>.</li>
+            <li>Under Format Options, click Create a bootable disk using <strong>ISO image</strong>.</li>
+            <li>After making sure that every option is set correctly, click <strong>Start</strong> at the bottom.</li>
+          </ol>
+          <p class="notice--info"><img alt="" src="assets/images/RufusSettings.jpg"></p>
+        </li>
+        <li>Rufus is now copying Windows 10 to your USB drive.<br>
+        It will take a few minutes, depending on your USB drive.</li>
+      </ol>
+      <p class="notice--primary">You are done with all of the preparation steps. <a href="Installation.html">Continue to the next step.</a></p>
+    </section>
   </article>
-</div>
-      <footer>
-      </footer>
-    </div>
-  </body>
+</body>
 </html>
